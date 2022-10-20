@@ -1,0 +1,137 @@
+.grid {
+    
+    display: flex;
+    flex-wrap: wrap;
+    z-index: -1;
+    background-color: rgb(245, 239, 244);
+    margin: 10% auto;
+    border: 1px solid gray;
+}
+
+.grid > div {
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    
+}
+
+.bg-yellow {
+    background: #dbe95c;
+}
+
+.bg-green {
+    background: #78e95c;
+}
+
+.links {
+    padding: 0 10px;
+    border-top: 1px solid #000;
+    height: 1px;
+    line-height: 0.1em;
+  }
+
+@media only screen and (max-width: 600px) {
+    .grid {
+        width: 450px;
+        height: 450px; 
+        
+    }
+  }
+  
+@media only screen and (max-width: 600px) {
+    .grid div {
+        width: 48px;
+        height: 48px;
+        
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .grid {
+        width: 540px;
+        height: 540px; 
+        
+    }
+  }
+  
+@media only screen and (min-width: 600px) {
+    .grid div {
+        width: 58px;
+        height: 58px;
+    }
+}
+
+body{
+    background-color: #353535;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    user-select:none; 
+}
+
+h2,h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+
+}
+
+.grayback{
+    background-color: #353535;
+    opacity: 0.5;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    z-index: 1;
+
+}
+
+.grayback{
+    background-color: #353535;
+    opacity: 0.5;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    z-index: 1;
+    display: none;
+
+}
+
+.window{
+    background-color: #70f33c;
+    color: rgb(73, 77, 80);
+    border: 5px solid rgb(243, 239, 239);
+    border-radius: 5px;
+    font-size: 1.6em;
+    position:absolute;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    animation: mymove 0.5s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes mymove {
+    from {
+        top:60%;
+        right:35%;
+        height:20%;
+        width:30%;
+
+    }
+    to {
+        top:40%;
+        right:25%;
+        height:30%;
+        width:50%;
+    }
+
+}
+
